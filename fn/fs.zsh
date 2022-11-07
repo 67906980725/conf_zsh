@@ -6,6 +6,13 @@ cdls()
 alias c=cdls
 c
 
+zls()
+{
+  z "$1"
+  c
+}
+alias z=zls
+
 len()
 {
   #echo "total: $(expr $(ls -a | wc -l) - 2) $(du -hs)"
