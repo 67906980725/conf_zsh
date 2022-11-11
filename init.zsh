@@ -1,3 +1,4 @@
+export _OMZ_APPLY_CHPWD_HOOK="false"
 source $ZSH/omz/omz.zsh
 
 for item in `ls $ZSH/env`; do
@@ -6,6 +7,6 @@ done
 
 for item in `ls $ZSH/fn`; do
 	f="$ZSH/fn/$item"
-    [ ! -d "$f" ] && source "$f"
+  [ ! -d "$f" ] && source "$f"
 done
 

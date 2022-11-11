@@ -6,17 +6,30 @@ cdls()
 cdls
 
 
+# 上一个工作路径
+i_last_pwd="-"
+i_before_change_pwd()
+{
+   i_last_pwd=$(pwd)
+}
+
+
+# todo 历史队列 左右横跳 (u/r)
+i_pwd_s=("-")
+i_cur=0
+i_add_pwd()
+{
+  length="${#i_pwd_s[*]}"
+  #last=
+}
+
+
 # 交换工作路径
-i_last_dir="-"
 t()
 {
  tmp_str=$(pwd)
- cdls $i_last_dir
- i_last_dir="$tmp_str"
-}
-i_before_change_pwd()
-{
-   i_last_dir=$(pwd)
+ cdls $i_last_pwd
+ i_last_pwd="$tmp_str"
 }
 
 
@@ -73,9 +86,6 @@ h() {
 }
 
 
-# todo 历史队列 左右横跳
-
-
 # 目录大小
 len()
 {
@@ -86,3 +96,10 @@ len()
   echo "total: $total $(du -hs $1)"
 }
 
+
+# 复制当前路径 (copy path)
+cpp()
+{
+  # xorg: xclip
+  echo "$(pwd)" | xclip -sel clip
+}
