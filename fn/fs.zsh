@@ -3,8 +3,7 @@ cdls()
 {
   cd "$1" && echo $(pwd) && ls -ah
 }
-cdls
-
+# cdls
 
 # 上一个工作路径
 i_last_pwd="-"

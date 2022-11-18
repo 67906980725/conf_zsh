@@ -1,4 +1,5 @@
-
-alias note="cd ${NOTE_DIR} && nvim ."
+alias img="mpv --image-display-duration=inf --fs --loop=inf"
 alias imv="mpv --shuffle --border=yes --volume=56 ${MV_DIR}"
 alias imusic="mpv --no-video --shuffle --volume=56 ${MV_DIR}"
+alias mg="nvim ."
+alias note="cd ${NOTE_DIR} && mg"
