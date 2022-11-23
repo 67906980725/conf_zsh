@@ -6,7 +6,7 @@ update_git_projs()
 {
     msg=""
     
-    omz_msg=$(_update_git_proj omz $OMZ origin master github master)
+    omz_msg=$(_update_git_proj omz $OMZ origin master)
     msg="$msg \n$omz_msg" 
     
     nvim_msg=$(_update_git_proj nvim $CONF_PATH/nvim github master)

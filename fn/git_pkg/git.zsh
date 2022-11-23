@@ -33,7 +33,7 @@ _update_git_proj()
     msg=$(_ts_git_pull_msg "$origin_msg")
     build_msg=""
     if [ "$msg" = "更新成功" ] && [ "$build_fn" != "" ]; then
-        build_msg=$(build_fn)
+        build_msg=$($build_fn)
     fi
     echo "${name}: $msg $build_msg"
 }
