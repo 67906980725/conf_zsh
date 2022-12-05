@@ -1,3 +1,5 @@
+alias git='git'
+
 # simple rust
 rust()
 {
