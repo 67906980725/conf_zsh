@@ -12,4 +12,4 @@ mg()
   fi
 }
 
-alias note="cd ${NOTE_DIR} && mg"
+alias note="cd ${NOTE_PATH} && mg"
