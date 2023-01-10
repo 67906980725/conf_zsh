@@ -7,6 +7,10 @@ export SRC_PATH=$HOME/.local/src
 export PROJECT_PATH=$HOME/.local/project
 export CONF_PATH=$HOME/.config
 export LOG_PATH=$HOME/.cache
+export TMP_PATH=/tmp/i
+
+export NOTE_PATH=$HOME/.local/note
+export MV_DIR=$HOME/asset/tel/recreation/mv
 
 
 export PATH=$SCRIPT_PATH:$BIN_PATH:/usr/local/bin:$PATH

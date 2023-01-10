@@ -6,7 +6,7 @@ for pkg in ${pkgs[*]}; do
     fi
 done
 
-source "$ZSH/fn/git_pkg/mod.zsh"
+source "$ZSH/fn/pkg/git_pkg/mod.zsh"
 _update_with_other()
 {
     update

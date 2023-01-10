@@ -97,17 +97,19 @@ len()
 
 
 # 复制当前路径 (copy path)
-cpp()
+path()
 {
+  str=$(pwd)
+  echo "$str"
   # xorg: xclip
-  echo "$(pwd)" | xclip -sel clip
+  echo "$str" | xclip -sel clip
 }
 
-# 把app的入口软链接到$BIN_PATH
-app()
+
+itouch()
 {
-    if [ "$1" != "" ] && if [ -x "$1" ]; then
-        r_path=$(realpath "$1")
-        ln -s "$r_path" "$BIN_PATH/$2"
-    fi
+    dir=$(dirname "$1")
+    mkdir -p "$dir"
+    touch "$1"
 }
+alias touch="itouch"

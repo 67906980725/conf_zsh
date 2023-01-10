@@ -1,5 +1,5 @@
 
-export EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/vim
 export TERM=xterm-256color
 
 export FZF_DEFAULT_COMMAND='fd -HIL -tf --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,dist,vendor}'
