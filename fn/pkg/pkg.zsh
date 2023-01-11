@@ -13,3 +13,10 @@ _update_with_other()
     update_git_projs
 }
 alias update="_update_with_other"
+
+rewechat()
+{
+    cd ~/.cache/paru/clone/deepin-wine-wechat
+    updpkgsums
+    makepkg -si
+}
